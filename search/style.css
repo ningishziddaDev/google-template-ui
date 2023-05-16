@@ -45,6 +45,11 @@ body{
     -moz-text-decoration-line: underline;
 }
 
+.top-nav-second-child p > a{
+    color: currentColor;
+    text-decoration: none;
+}
+
 .log-sign-in{
     padding: 10px 15px;
     background-color: #0c61e0;
@@ -61,10 +66,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 27.9vh 0 0 0;
 }
 
-.container-logo{
-    margin: 27.9vh 0 0 0;
+.container-logo > p{
+    display: block;
+    color:#1c73e4;
+    position: fixed;
+    transform: translate(200%, 200%);
+    -webkit-transform: translate(200%, 200%);
+    -moz-transform: translate(200%, 200%);
+    -ms-transform: translate(200%, 200%);
+    -o-transform: translate(200%, 200%);
 }
 
 form{
