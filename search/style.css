@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top-nav{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 13px 0;
+    font-size: 13px;
+}
+
+.top-nav-first-child,
+.bottom-nav-first-child{
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 0 20px;
+}
+
+.top-nav-second-child,
+.bottom-nav-second-child{
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 0 10px;
+}
+
+.top-nav-first-child > p:hover,
+.bottom-nav-first-child > p:hover,
+.top-nav-second-child > p:hover,
+.bottom-nav-second-child > p:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+}
+
+.log-sign-in{
+    padding: 10px 15px;
+    background-color: #0c61e0;
+    color: #fff;
+    font-weight: 700;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo{
+    margin: 27.9vh 0 0 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    margin: 2.5vh auto;
+    width: 34em;
+    height: 5vh;
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    outline: none;
+    border: 1px solid rgb(220, 230, 230);
+    padding: 0 1em;
+}
+
+form:hover{
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.01), 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+form:focus {
+    color: #4b515d;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    padding: 0 2em;
+    font-size: 1em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 2.9vh 0;
+}
+
+.button > input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%;
+    height: 4vh;
+    border: none;
+    background-color: #f7f7f7c5;
+    color: #3b3b3b;
+    font-size: 90%;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    margin: 0 0.5em;
+}
+
+.button > input:hover{
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.bottom-nav{
+    width: 100%;
+    background-color: #acacac28;
+    position:absolute;
+    bottom: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    border-top: 1px solid #acacac3a;
+}
+
+.bottom-nav-first-child > p,
+.bottom-nav-second-child > p{
+    padding: 1em 0.5em;
+    color:#4b515dbb;
+}
+
+
+/*Import data for css icon*/
+
+.gg-menu-grid-o {
+    cursor: pointer;
+    opacity: 60%;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+}
+.gg-menu-grid-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:
+        0 6px 0,
+        6px 6px 0,
+        12px 6px 0,
+        6px 12px 0,
+        12px 12px 0,
+        6px 0 0,
+        12px 0 0,
+        0 12px 0
+    ;
+    border-radius: 22px;
+}
+
+.gg-menu-grid-o:hover{
+    background-color: #9e9e9e8f;
+    box-shadow: 0 0 0 10px #9e9e9e8f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.gg-search {
+    position: fixed;
+    box-sizing: border-box;
+    display: block;
+    width: .9em;
+    height: .9em;
+    border: 2px solid #8f8f8fe7;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    scale: .85;
+}
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: #8f8f8fe7;
+    transform: rotate(-45deg);
+    top: 8px;
+    left: 12px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/*----------------------------*/
+
+/*---------Media Queries-------*/
+@media screen and (max-width: 1050px){
+    body{
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .container-logo{
+        margin: 6em 0 0 0;
+        scale: .58;
+    }
+
+    form{
+        width: 85vw;
+        height: 2.5em;
+        margin: 0 auto;
+    }
+
+    form > input{
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .top-nav{
+        margin: 2.5% 0;
+    }
+
+    .top-nav-first-child{
+        margin: 0 1.5em;
+    }
+
+    .top-nav-first-child > p{
+        display: none;
+    }
+
+    .top-nav-second-child > p{
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .top-nav-second-child > p:first-child{
+        display: none;
+    }
+
+    .top-nav-second-child > p:nth-child(-n+3){
+        margin: 0 auto;
+        color: #4b515dc9;
+        font-size: .9em;
+    }
+
+    .top-nav-second-child > i{
+        margin: 0 15px;
+    }
+
+    .log-sign-in{
+        padding: 7px 7.5px;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .gg-menu {
+        transform: scale(var(--ggs,1))
+    }
+    .gg-menu,
+    .gg-menu::after,
+    .gg-menu::before {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 3px;
+        background: #3b3b3bbd;
+    }
+    .gg-menu::after,
+    .gg-menu::before {
+        content: "";
+        position: absolute;
+        top: -5px
+    }
+    .gg-menu::after {
+        top: 5px
+    }
+
+    .bottom-nav{
+        width: 100%;
+        height: 15vh;
+        background-color: #acacac28;
+        position:fixed;
+        bottom: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bottom-nav-first-child,
+    .bottom-nav-second-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*-----------------------------*/
