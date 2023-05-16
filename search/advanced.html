@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" href="/images/google-logo.png">
+</head>
+<body>
+    <div class="advanced-top-nav">
+        <img src="./images/logo-google.svg" alt="logo">
+        <div class="account-buttons">
+            <p><a href="./index.html">Search</a></p>
+            <p><a href="./images.html">Images</a></p>
+            <i class="gg-menu-grid-o"></i>
+            <p class="log-button"><a href="#"></a>Sign In</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title-section">
+            <p>Advanced Search</p>
+        </div>
+        <div class="search-first-section">
+            <div class="tr">
+                <div class="td">Find pages with...</div>
+                <div class="td"></div>
+                <div class="td"><p>To do this in the search box</p></div>
+            </div>
+            <div class="tr">
+                <div class="td">all these words:</div>
+                <div class="td"><input type="text"></div>
+                <div class="td"><p>Type the important words: <span>tricolor rat terrier</span></p></div>
+            </div>
+            <div class="tr">
+                <div class="td">this exact word or phrase:</div>
+                <div class="td"><input type="text"></div>
+                <div class="td"><p>Put exact words in quotes: <span>"rat terrier"</span></p></div>
+            </div>
+            <div class="tr">
+                <div class="td">any of these words:</div>
+                <div class="td"><input type="text"></div>
+                <div class="td"><p>Type OR between all the words you want: <span>miniature OR standard</span></p></div>
+            </div>
+            <div class="tr">
+                <div class="td">none of those words:</div>
+                <div class="td"><input type="text"></div>
+                <div class="td"><p>Put a minus sign just before words that you don't want: <span>-rodent, -"Jack Russell"</span></p></div>
+            </div>
+            <div class="tr">
+                <div class="td">numbers ranging from:</div>
+                <div class="td"><input type="text"><p>to</p><input type="text"></div>
+                <div class="td"><p>Put two full stops between the numbers and add a unit of measure: <span>10..35 kg, $300..$500, 2010..2011</span></p></div>
+            </div>
+        </div>
+        <div class="search-second-section">
+            <div class="tr">
+                <div class="td">Then narrow your results by...</div>
+                <div class="td"></div>
+                <div class="td"></div>
+            </div>
+            <div class="tr">
+                <div class="td">language:</div>
+                <div class="td">
+                    <select name="language" id="language_list">
+                        <option>any language</option>
+                        <option>English</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+                        <option>Chinese</option>
+                    </select>
+                </div>
+                <div class="td"><p>Find pages in the language that you select</p></div>
+            </div>
+            <div class="tr">
+                <div class="td">region:</div>
+                <div class="td">
+                    <select name="region" id="region_list">
+                        <option>any region</option>
+                        <option>UK</option>
+                        <option>France</option>
+                        <option>Spain</option>
+                        <option>China</option>
+                    </select>
+                </div>
+                <div class="td"><p>Find pages published in a particular region</p></div>
+            </div>
+            <div class="tr">
+                <div class="td">last update:</div>
+                <div class="td">
+                    <select name="update" id="update_list">
+                        <option>anytime</option>
+                        <option>from the last 24 hours</option>
+                        <option>since last week</option>
+                        <option>since last month</option>
+                        <option>from the last year</option>
+                    </select>
+                </div>
+                <div class="td"><p>Find pages update within the time that you specify</p></div>
+            </div>
+            <div class="tr">
+                <div class="td">site or domain:</div>
+                <div class="td"><input type="text"></div>
+                <div class="td"><p>Search one site(like <span>wikipedia.org</span>) or limit your results to a domain like <span>.edu .org or .gov</span></p></div>
+            </div>
+            <div class="tr">
+                <div class="td">terms appearing:</div>
+                <div class="td">
+                    <select name="terms" id="terms-list">
+                        <option>anywhere in the page</option>
+                        <option>in the title of the page</option>
+                        <option>in the text of the page</option>
+                        <option>in the URL of the page</option>
+                        <option>in links to the page</option>
+                    </select>
+                </div>
+                <div class="td"><p>Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</p></div>
+            </div>
+            <div class="tr">
+                <div class="td"><p class="blue-words">SafeSearch:</p></div>
+                <div class="td">
+                    <select name="search" id="search-list">
+                        <option>Show explicit results</option>
+                        <option>Hide explicit results</option>
+                    </select>
+                </div>
+                <div class="td"><p>Tell <span class="blue-words">SafeSearch</span> whether to filter sexually explicit content.</p></div>
+            </div>
+            <div class="tr">
+                <div class="td">file type:</div>
+                <div class="td">
+                    <select name="file" id="file-list">
+                        <option>any format</option>
+                        <option>PDF</option>
+                        <option>PS</option>
+                        <option>DOC</option>
+                    </select>
+                </div>
+                <div class="td"><p>Find pages in the format you prefer.</p></div>
+            </div>
+            <div class="tr">
+                <div class="td"><p class="blue-words">usage rights:</p></div>
+                <div class="td">
+                    <select name="rights" id="rights-list">
+                        <option>not filtered by license</option>
+                        <option>free to use or share</option>
+                        <option>free to use or modify</option>
+                    </select>
+                </div>
+                <div class="td"><p>Find pages you are free to use yourself.</p></div>
+            </div>
+            <div class="advanced-submit">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </div>
+    </div>
+    <div class="advanced-bottom-nav">
+        <p><a href="#">Help</a></p>
+        <p><a href="#">Privacy</a></p>
+        <p><a href="#">Terms</a></p>
+    </div>
+</body>
+</html>
