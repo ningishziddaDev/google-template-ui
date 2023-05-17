@@ -11,6 +11,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*Google Search and Google Image Search*/
+
+/* top navigation bar - google logo & links to different pages*/
+
 .top-nav{
     width: 100%;
     position:absolute;
@@ -62,6 +66,8 @@ body{
     -ms-border-radius:5px;
     -o-border-radius:5px;
 }
+
+/*logo of google search & search bar and buttons*/
 
 .container-logo{
     display: flex;
@@ -144,6 +150,8 @@ input{
     border: 1px solid #d6d6d6;
     cursor: pointer;
 }
+
+/*bottom bar*/
 
 .bottom-nav{
     width: 100%;
@@ -355,6 +363,8 @@ input{
         cursor: default;
     }
 
+/*Configuration of page to look like a table*/
+
     .search-first-section{
         display: table;
     }
@@ -366,6 +376,8 @@ input{
     .td{
         display: table-cell; 
     }
+
+    /*Top navigation bar: logo and links*/
 
     .advanced-top-nav{
         width: 100vw;
@@ -419,6 +431,8 @@ input{
     .log-button:hover{
         cursor: pointer;
     }
+
+    /*Content of page*/
 
     .content{
         width: 100vw;
@@ -575,6 +589,8 @@ input{
         background-color: #1870f3e5;
     }
 
+    /*Bottom navigation bar*/
+
     .advanced-bottom-nav{
         width: 100%;
         background-color: #c1c2c485;
@@ -597,6 +613,8 @@ input{
     .advanced-bottom-nav p > a:hover{
         color: #383838;
     }
+
+    /*Configure page for a responsive design*/
 
     @media screen and (max-width: 1050px){
         body{
